@@ -76,6 +76,8 @@ function startFunction(){
     echo -ne "\n${yellowColour}A continuacion se listaran sus tarjetas de red\n${endColour}"; iwconfig  
     echo -ne "${yellowColour}Inserte el nombre de la tarjeta de red a analizar: ${endColour}" && read networkCardDiag
     echo -ne "\n${greenColour}Espere un momento...${endColour}"
+    systemctl stop NetworkManager
+    systemctl restart NetworkManager
     ifconfig ${networkCardDiag} down > /dev/null 2>&1
     
     if [ "$(echo $?)" == "0" ]; then
