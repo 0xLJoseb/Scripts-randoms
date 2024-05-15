@@ -3,3 +3,6 @@ Script que ejecuta los ataques:
 * Handshake
 * PKMID (Pre-shared Key Man-in-the-Middle) 
 
+15/05/2024
+
+Para PKMID el proceso de fuerza bruta mediante hashcat con el modo 16800 es obsoleto, por lo tanto, se ha cambiado este modo por el "22000" además de agregar la flag -w 3 y -a 0
