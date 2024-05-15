@@ -144,7 +144,7 @@ function startAttack(){
 		
 				echo -e "\n${yellowColour}[*]${endColour}${grayColour} Iniciando proceso de fuerza bruta...${endColour}\n"
  				sleep 2
- 				hashcat -m 16800 /usr/share/wordlists/rockyou.txt.gz myHashes -d 1 --force
+ 				hashcat -m 16800 -a 0 -w 3 myHashes /usr/share/wordlists/rockyou.txt.gz -d 1 --force
 
 			else
 				 echo -e "\n${redColour}[!]${endColour}${grayColour} No se ha podido capturar el paquete necesario...${endColour}\n"
