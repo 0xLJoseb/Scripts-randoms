@@ -1,0 +1,6 @@
+Este es un pequeño script diseñado para automatizar el proceso de conexión a una red Wi-Fi en un entorno Linux via terminal. 
+Es importante tener en cuenta que se debe conocer la contraseña de la red Wi-Fi para utilizar este script. 
+Este script no tiene intenciones maliciosas y es seguro para su uso.
+
+Este script facilita la conexión a una red Wi-Fi con wpa_supplicant utilizando el driver nl80211 para la comunicación con el kernel y la gestión de la conexión inalámbrica. 
+Si se desea, el driver puede cambiarse por el de su preferencia, solo debe cambiarlo en el código.
