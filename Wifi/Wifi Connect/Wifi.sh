@@ -85,7 +85,7 @@ function startFunction(){
         sleep 2;
         ifconfig ${networkCardDiag} up
         echo -ne "\n${greenColour}Perfecto!${endColour}\n"
-        echo -ne "${purpleColour}Intente utilizar la nuevamente la opcion${endColour}${yellowColour} [consultar] ${endColour}${purpleColour}de este script${endColour}"
+        echo -ne "${purpleColour}Intente utilizar nuevamente la opcion${endColour}${yellowColour} [consultar] ${endColour}${purpleColour}de este script${endColour}"
 
     else
         echo -ne "\n${redColour}Algo ha salido mal.${endColour}"
